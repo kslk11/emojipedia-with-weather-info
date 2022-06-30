@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="text-large" id="navbar" class="">
+        <div class="nav-wrapper">
+          Weather
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="heading-spacing"></div>
+        <div class="vertical-spacing card">
+          <div class="text-center text-medium">GET CURRENT WEATHER INFO FOR YOUR CITY</div>
+          <div class="text-center vertical-spacing">
+  
+            <div class="input-wrapper">
+              <input class="input text-center show-inline" placeholder="Enter City" type="text" id="city-input" onclick="hideError()"/>
+              <button class="text-center show-inline" id="btn-data">Submit</button>
+            </div> 
+
+            <div id="display-error" class="text-medium"></div>
+            
+            <div class="input-wrapper text-medium vertical-spacing">
+                <span class="float-left">Temperature: <span id="current-temperature"></span></span>
+                <span>Feels like:<span id="temp-feels-like"></span></span>
+            </div> 
+
+              <div class="input-wrapper text-medium vertical-spacing">
+                <span class="float-left">Cloudy: <span id="cloud-description"></span></span>
+                <span>Humidity:<span id="humidity"></span></span>
+              </div> 
+          </div>
+              
+        </div>
+      </div>
+
+    <!-- <div id="input-box"><input type="text" id="city-input" placeholder="Enter the city"></div>
+    <button id="btn-data">Search</button>
+
+    <div class="container">
+        <div class="sub-container-1">
+            <span>Temperature: <span id="current-temperature"></span></span>
+            <div class="seprator"></div>
+            <span>Feels like:<span id="temp-feels-like"></span></span>
+        </div>
+
+        <div class="sub-container-2">
+            <span>Cloudy: <span id="cloud-description"></span></span>
+            <div class="seprator"></div>
+            <span>Humidity:<span id="humidity"></span></span>
+        </div>
+
+    </div> -->
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+}
+body {
+  padding-top: 10px;
+  background: rgb(250, 250, 250);
+  background-image: url("background.svg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  gap: 30%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading-spacing {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.vertical-spacing {
+  margin-top: 25px;
+}
+
+.text-large {
+  font-size: 48px;
+}
+
+.text-medium {
+  font-size: 32px;
+}
+
+.input-min-width {
+  min-width: none;
+}
+
+.text-color {
+  color: #474747;
+}
+
+.show-inline {
+  display: inline;
+}
+
+/* -----card----- */
+.card {
+  /* width: 254px;
+  height: 190px; */
+  padding: 70px 70px;
+  background: linear-gradient(135deg, #ebadb6 0%, #aceae1 100%);
+  border-radius: 7px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  opacity: 0.95;
+}
+
+/* -----button----- */
+
+button {
+  float: right;
+  padding: 1.3em 3em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* -----input----- */
+.input-wrapper input {
+  /* float: left; */
+  width: 60%;
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+  /* width: 13em; */
+  min-width: 250px;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: orange;
+}
+
+@media (max-width: 710px) {
+  .card {
+    padding: 20px 20px;
+  }
+}
+
+/* -----navbar------ */
+#navbar {
+  background: white;
+  color: rgb(13, 26, 38);
+  position: fixed;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100vw;
+  z-index: 10;
+}
+
+.nav-wrapper {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}

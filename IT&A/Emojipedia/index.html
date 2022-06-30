@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>IT&A Project</title>
+  </head>
+
+  <body class="">
+    <nav class="text-large" id="navbar" class="">
+      <div class="nav-wrapper">
+        EMOJIPEDIA
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="heading-spacing"></div>
+      <div class="vertical-spacing card">
+        <div class="text-center text-medium">FIND NAME OF YOUR FAVORITE EMOJI</div>
+        <div class="text-center vertical-spacing">
+
+          <div class="input-wrapper">
+            <input class="input text-center" placeholder="Enter Emoji" type="text" id="input" name="q"/>
+            <button class="text-center" onclick="myFunction()">Submit</button>
+          </div>
+
+          <!-- <input class="input-min-width" placeholder="Enter Emoji"type="text"id="input" name="q"/> -->
+
+          
+        </div>
+        <div class="text-center text-color vertical-spacing text-medium">
+          <span id="emoji_name"></span>
+        </div> 
+            
+        <div class="text-center vertical-spacing text-medium text-color">
+          <span>Suggestions</span>
+
+          <span class="emoji_data" onclick="setValue('😀')" style="cursor: pointer" >😀</span>
+          <span class="emoji_data" onclick="setValue('😁')" style="cursor: pointer">😁</span>
+          <span class="emoji_data" onclick="setValue('😇')" style="cursor: pointer" >😇</span>
+          <span class="emoji_data" onclick="setValue('😈')" style="cursor: pointer">😈</span >
+          <span class="emoji_data" onclick="setValue('😍')" style="cursor: pointer">😍</span>
+          <span class="emoji_data" onclick="setValue('😏')" style="cursor: pointer">😏</span>
+          <span class="emoji_data" onclick="setValue('😛')" style="cursor: pointer" >😛</span>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
